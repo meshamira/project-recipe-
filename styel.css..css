@@ -1,0 +1,14 @@
+body { 
+    background-color: rgb(190, 190, 187);
+}
+h3 {
+    color: rgba(0, 0, 0, 0.89);
+    font-family: Arial;
+}
+h4 {
+    font-style: italic;
+}
+p {
+    font-family: Arial;
+    font-size: medium;
+}
