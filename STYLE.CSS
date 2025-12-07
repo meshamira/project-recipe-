@@ -1,0 +1,16 @@
+body { 
+    background-color: rgb(190, 190, 187);
+}
+h3 {
+    color: rgba(0, 0, 0, 0.89);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: SMALL;
+}
+h4 {
+    font-style: italic;
+    font-size: large;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
