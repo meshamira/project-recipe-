@@ -22,7 +22,7 @@ p {
 
 
   img {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top:10px ;
@@ -36,6 +36,7 @@ p {
             font-size:bold ;
             font-size:30px;
         }
+
 .link-box {
     border: 2px solid rgb(226, 43, 83);
     padding: 10px;
@@ -48,28 +49,40 @@ p {
 
 header {
    
-    font-size: 40px;
+    font-size: 20px;
     color: rgb(61, 43, 226);
     font-weight: bold;
      border: 2px solid rgb(226, 43, 83);
     padding: 10px;
     background-color:  rgb(190, 190, 187);
     text-align: center;
+
 }
 
-nav {
-    background-color: rgb(190, 190, 187);
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    border: 2px solid rgb(226, 43, 83);
+/* flexbox style */
+
+
+.nav-list {
+  display: flex;       /* Aligns items in a row */
+  list-style: none;    /* Removes bullet points */
+  padding: 0;
+  gap: 10px;          
+ justify-content:space-around; /* Centers the nav items horizontally */
 }
-button-link {
-    background-color: rgb(61, 43, 226);
-    color: rgb(10, 10, 10);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+
+
+
+.nav-link {
+  display: block;      /* Makes the whole area clickable */
+  padding: 10px 20px;
+  text-decoration: none;
+  background:  rgb(226, 43, 83);   /* Default "button" look */
+  color: white;
+  border-radius: 5px;
 }
+.nav-link.special {
+  flex-grow:2;
+}
+
+
+
