@@ -1,16 +1,105 @@
+
+header {
+   
+    font-size: 20px;
+    color: rgb(61, 43, 226);
+    font-weight: bold;
+    border: 2px solid rgb(226, 43, 83);
+    padding: 10px;
+    background-color:  rgb(190, 190, 187);
+    text-align: center;
+ 
+}
+
+                              /* end of header*/
+
+                             /* flexbox style */
+
+.nav-list {
+  display: flex;       /* Aligns items in a row */
+  list-style: none;    /* Removes bullet points */
+  padding: 0;
+  gap: 10px;          
+ justify-content:space-evenly; /* Centers the nav items horizontally */
+}
+
+.nav-link {
+  display: block;      /* Makes the whole area clickable */
+  padding: 10px 20px;
+  text-decoration: none;
+  background:  rgb(226, 43, 83);   /* Default "button" look */
+  color: white;
+  border-radius: 5px;
+}
+.nav-link.special {
+  flex-grow:1; /* Makes this link take up more space */
+}
+                                /*end of flexbox*/
+
 body { 
     background-color: rgb(190, 190, 187);
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing:border-box;
+
 }
+
+h2 {
+    color:rgb(61, 43, 226);
+    text-align: center;
+    font-weight:bold;
+
+}
+
 h3 {
-    color: rgba(0, 0, 0, 0.89);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: SMALL;
+  color:rgb(61, 43, 226);
+    text-align:left;
+    font-weight:bold; 
+  }
+
+                                   /* image style */
+  img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10px ;
+  width:500px ;
+  }
+
+                               /*inggredients style */
+
+ .ingredients-list
+ {
+  display: grid;
+  grid-template-columns: 1fr; /* Stacked on mobile */
+  gap: 1.5rem;
+
 }
-h4 {
-    font-style: italic;
-    font-size: large;
+
+.ingredients-list dt {
+  font-weight: bold;
+  color: rgb(226, 43, 83);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-style: italic;
 }
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
+
+.ingredients-list dd {
+  margin-left: 0; /* Resets default browser indent */
+  color: #0e0d0d;
+  font-style: italic;
 }
+
+ 
+                                         /*link box*/
+.link-box {
+    border: 2px solid rgb(226, 43, 83);
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    background-color:rgb(190, 190, 187);
+}
+                                  /*end of link box*/
+
