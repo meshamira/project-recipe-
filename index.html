@@ -1,105 +1,134 @@
 <!DOCTYPE html>
-<html lang="eng"></html>
-<head>
-    <meta charset=" utf 8"> 
-<title>new racipe </title>
+<html lang="en"> <!--language set to english-->
 
-<!-- Header section -->
+<head>
+  <!--character encoding-->
+    <meta charset="utf-8"> 
+
+    <!--meta viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Recipes </title>
+
+    <!-- meta description -->
+    <meta name="description" content="Delicious chicken parmigiana recipe with ingredients and cooking tips."> 
+    
+                              <!--external css link-->
+<link rel="stylesheet" href="style.CSS">
+
+                                <!--internal css-->
+
+<style>
+
+ .strong 
+         {
+            color: rgb(61, 43, 226);
+            text-align: center;
+            font-weight:bold ;
+            font-size:30px;
+        }
+    </style>
+                               <!--end of internal css-->
+                                
+</head>
+
+ <body>
+                     <!-- Header section -->
 
 <header class="main-header-box">
 
     <div class="header-content">
 
-        <h1>new recibes</h1>
+        <h1>New Recipes</h1>
 
-        <nav>
-        
-      <span class="nav-links">
+                      <!--NAV links to other pages--> 
 
-       <!--button links to other pages-->        
-            
-           <button><a href= "login-signup.html"class="button">LOGIN/SIGNUP</a></button>   
-          <button><a href="index.html" class="button">HOME</a></button>
-
-        </span>
-
-        </nav>
+<nav class="main-nav">
+  <ul class="nav-list">
+    <li><a href="login-signup.html" class="nav-link special">LOGIN/SIGNUP</a></li>
+    <li><a href="index.html" class="nav-link">HOME</a></li>
+    <li><a href="about.html" class="nav-link">ABOUT</a></li>
+  </ul>
+</nav>
+                           <!--end nav links-->
     </div>
-
-    
-
 </header>
+                             <!--end header-->
+                          
 
-
-<!--external css link-->
-
-<link rel="stylesheet" href="styel.css..css">
-
-</head>
-
-<!--internal css-->
-
-<style>
-         strong 
-         {
-            color: rgb(61, 43, 226);
-            text-align: center;
-            font-size:bold ;
-        }
-    </style>
-<body>
-
-    <!--inline css -->
+                            <!--inline css -->
     
-    <h1 style="color:blueviolet; text-align: center;">Welcome to my rscipes</h1>
-    
-    <p>
-        <h3>cooking for someone else is one of greatest ways to show them how much you love them
+    <h2 style="color:blueviolet; text-align: center;">Welcome to my rscipes</h2>
+
+                          <!--end inline css-->
+
+      <blockquote>
+        cooking for someone else is one of greatest ways to show them how much you love them
         so here is a few racipes to show your love 
-    </h3>
-</p>
+      </blockquote>
 
-<div class="strong">
-        
-            <strong>chicken parmigiana</strong>
-</div>
+            <h2>Chicken parmigiana</h2>
 
-<!--image with alt text-->
+                          
 
-<img src="classic-chicken-parmesan-scaled.jpg"alt="delicious golden chicken parmigiana topped with melted cheese">
-<p> <h2><strong>ingredians</strong></h2></p>
-<ul>
-    
-    <!--list items-css style-->
+                          <!--image with alt text-->
 
-    <li> <h4>Chicken breasts </h4></li>
- use boneless skinless chicken breasts, then slice each breast in half length-wise to create 
-      two cutlets. Or you can use pre-cut breasts, also known as chicken cutlets.
-<li><h4>flour</h4></li>
-use all-purpose flour or white whole wheat for dredging the chicken in. This is used to brown the chicken.
-<li><h4>Eggs</h4></li>
-      an egg mixture is used to help the breadcrumbs stick to the chicken after coating it in flour.
-Breadcrumbs 
-– <li><h4>for the breading mixture</h4></li >
- you can use store-bought panko breadcrumbs or homemade breadcrumbs.
-<li><h4>Marinara</h4></li> –
-you can use a quality store-bought marinara sauce or make a homemade sauce! See below for my top recommendations.
-<li><h4>Olive oil</h4></li>
- – oil is used in the pan-fried method to brown the chicken in batches. 
-If you instead bake the chicken, you’ll only need a little oil.
-<li><h4>Parmesan cheese</h4></li> –
- is used to add salty richness to the breadcrumbs and for sprinkling over the chicken at the end!
-Fresh mozzarella cheese – used for layering over the chicken for baking. You can use shredded or sliced pieces of mozzarella.
-<li><h4>Dried Italian herbs</h4></li>
- – I like to season my own breadcrumbs using a dried Italian herb blend.
-Garlic powder – used for flavoring the breadcrumb mixture.
-Black pepper & salt – for flavor.
-Fresh basil – for sprinkling over top of the finished chicken parmesan!
-</ul>
+<img src="classic-chicken-parmesan-scaled.jpg" alt="delicious golden chicken parmigiana topped with melted cheese">
 
-<!--link box-->
+                              <!--end imge-->
+
+
+<h3>ingredients</h3>
+
+                          
+                        <!--definition list insted of ul-->
+
+  <dl class="ingredients-list">
+
+  <dt>Chicken breasts</dt>
+  <dd>Use boneless skinless chicken breasts, sliced in half length-wise to create two cutlets, or use pre-cut chicken cutlets.</dd>
+
+  <dt>Flour</dt>
+  <dd>Use all-purpose or white whole wheat flour for dredging. This helps brown the chicken.</dd>
+
+  <dt>Eggs</dt>
+  <dd>An egg mixture helps the breadcrumbs stick to the chicken after the flour coating.</dd>
+
+  <dt>Breadcrumbs</dt>
+<dd>Use plain or Italian-seasoned breadcrumbs. Panko breadcrumbs can also be used for a crunchier texture.</dd>
+
+<dt>Marinara</dt>
+<dd>you can use a quality store-bought marinara sauce or make a homemade sauce! See below for my top recommendations.</dd>
+
+<dt>Olive oil</dt>
+<dd>oil is used in the pan-fried method to brown the chicken in batches.
+If you instead bake the chicken, you'll only need a little oil.</dd>
+
+<dt>Parmesan cheese</dt>
+<dd>is used to add salty richness to the breadcrumbs and for sprinkling over the chicken at the end!
+Fresh mozzarella cheese  used for layering over the chicken for baking. You can use shredded or sliced pieces of mozzarella.</dd>
+
+<dt>Dried Italian herbs</dt>
+
+<dd>I like to season my own breadcrumbs using a dried Italian herb blend. 
+Garlic powder  used for flavoring the breadcrumb mixture.</dd>
+                                <!--other ingredients -->
+
+<dd>Black pepper & salt  for flavor.
+Fresh basil  for sprinkling over top of the finished chicken parmesan!</dd>
+</dl>
+
+                                      <!--link box-->
 
 <div class="link-box">
-<a href ="https://asimplepalate.com/blog/chicken-parmigiana/">for the full recipe clilck here</a>
+<a href ="https://asimplepalate.com/blog/chicken-parmigiana/">for the full recipe click here</a>
 </div>
+
+                                      <!--end link box-->
+
+                              <!--button to lasagna page-->   
+     <button onclick="window.location.href='lasagna.html'" style="display: block; margin: 0 auto;">Next Page</button>
+      
+
 </body>
+</html>
