@@ -1,15 +1,24 @@
+                                /* Import professional fonts */
+@import url('fonts.googleapis.com');
+
+   
+                   /* Header style */
 
 header {
    
     font-size: 20px;
-    color: rgb(61, 43, 226);
     font-weight: bold;
-    border: 2px solid rgb(226, 43, 83);
-    padding: 10px;
-    background-color:  rgb(190, 190, 187);
+    border: 2px solid olivedrab;
+   background-color:olivedrab;
     text-align: center;
- 
+    padding: 20px 0;
+   border-bottom: 1px solid olivedrab;
+  
 }
+.site-title {
+    margin: 0;                 /* Removes default browser margins that can break centering */
+    font-size: 2rem;
+    }
 
                               /* end of header*/
 
@@ -27,45 +36,89 @@ header {
   display: block;      /* Makes the whole area clickable */
   padding: 10px 20px;
   text-decoration: none;
-  background:  rgb(226, 43, 83);   /* Default "button" look */
+  background:tomato;   /* Default "button" look */
   color: white;
   border-radius: 5px;
+     font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-decoration: none;
+
+    border: 1px solid white;
+    padding: 8px 20px;
+    border-radius: 2px; /* Subtle roundness is more professional than large curves */
+    transition: 0.3s;
 }
+.nav-link:hover {
+    background: blueviolet;
+    color: white;
+}
+
 .nav-link.special {
   flex-grow:1; /* Makes this link take up more space */
 }
                                 /*end of flexbox*/
 
+
+.page-container {
+    /* This centers the content and adds automatic margins on the left/right */
+    max-width: 900px; 
+    margin: 0 auto; 
+    
+    /* This adds a "safety" margin so text doesn't touch the screen edges on phones */
+    padding: 0 20px;
+      }
+                              /* body style */
+
 body { 
-    background-color: rgb(190, 190, 187);
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    background-color: #F4F1EA;
+    font-family: 'lato', sans-serif;
+    line-height: 1.6; /* Adds breathing room between lines */
+    margin: 0;
+    padding: 0;
     box-sizing:border-box;
-
+    margin-top: 40px;
+    margin-bottom: 80px;
+    }
+    
+                        /* Titles */
+    blockquote {
+    font-family: 'Playfair Display', serif; 
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333333; 
+}              
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color:olivedrab;
+    margin-top: 40px;
 }
 
-h2 {
-    color:rgb(61, 43, 226);
-    text-align: center;
+h1 { text-align: center; font-size: 3rem;
+    color: #F4F1EA;
     font-weight:bold;
-
 }
 
-h3 {
-  color:rgb(61, 43, 226);
-    text-align:left;
-    font-weight:bold; 
-  }
+h2 {text-align: center;
+    font-size:2.5rem;
+    color2:rgb(61, 43, 26);
+    font-weight:bold;
+}
+h3 {font-size:2rem;
+}
+
+                                  /* End of titles */
 
                                    /* image style */
   img {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:10px ;
-  width:500px ;
-  }
+display: block; /* Images aren't flex items; use block to center */
+    margin: 40px auto;
+    width: 100%;
+    max-width: 700px; /* Limits size on large screens */
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Soft professional shadow */
+}
+                                      /* end of image style*/
 
                                /*inggredients style */
 
@@ -75,19 +128,25 @@ h3 {
   grid-template-columns: 1fr; /* Stacked on mobile */
   gap: 1.5rem;
 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
 }
 
 .ingredients-list dt {
-  font-weight: bold;
-  color: rgb(226, 43, 83);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-style: italic;
+  
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #d14124;
+    margin-top: 20px;
+
 }
 
 .ingredients-list dd {
   margin-left: 0; /* Resets default browser indent */
-  color: #0e0d0d;
+  color: #333333; 
   font-style: italic;
 }
 
@@ -102,4 +161,52 @@ h3 {
     background-color:rgb(190, 190, 187);
 }
                                   /*end of link box*/
+
+.link-box {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.link-box a {
+
+    color: #333333; 
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    }
+
+                                    /* footer style */
+
+    .main-footer {
+    background-color: #54644B; /* Your Olive Green */
+    color: #F4F1EA;           /* Your Cream color for text */
+    padding: 40px 20px;
+    margin-top: 60px;         /* Pushes the footer away from the content */
+    text-align: center;
+}
+
+.footer-content p {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.footer-nav a {
+    color: #F4F1EA;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #D14124; /* Your Red color on hover */
+}
+
+
 
